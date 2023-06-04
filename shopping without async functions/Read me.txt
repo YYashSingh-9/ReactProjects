@@ -1,2 +1,4 @@
 functionalities inside CarAsyncAction file is not available because this is e-com without async functionalities ....
 if you want that or any other questions , DM me on my ig account link is in my profile 👍😎 
+
+also this one isn't responsive only for big screens .. there is responsive one attached in this repository
