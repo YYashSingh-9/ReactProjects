@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+label {
+  position: relative;
+  height: auto;
+  width: 4rem;
+  border-radius: 50%;
+  background-color: rgb(195, 195, 195);
+  color: rgb(240, 39, 39);
+  font-size: 1.2rem;
+  margin-right: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+input {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+}
+label:hover input ~ .checkmark {
+  border: 0.2rem solid rgb(20, 20, 20);
+}
+label input:checked ~ .checkmark {
+  background-color: rgb(24, 24, 24);
+  color: white;
+}
+.checkmark {
+  position: absolute;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  line-height: 4rem;
+  background-color: rgb(174, 174, 174);
+
+  border: 0.2rem solid transparent;
+}
+
+@media (min-width: 280px) and (max-width: 576px) {
+  .checkmark {
+    height: 4rem;
+
+    width: 4rem;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 50%;
+    line-height: 3.7rem;
+  }
+  label {
+    text-align: center;
+    justify-content: center;
+    line-height: 3.5rem;
+    background: none;
+    margin-bottom: 0rem;
+  }
+}
