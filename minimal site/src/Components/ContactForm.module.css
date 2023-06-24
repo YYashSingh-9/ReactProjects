@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+* {
+  color: rgb(181, 181, 181);
+}
+.ContactSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0% 10%;
+}
+.contactInfo {
+  display: grid;
+  max-width: 45%;
+  grid-template-rows: 20rem 34rem;
+}
+.contactSection_one {
+  text-align: center;
+}
+.contactSection_one h1 {
+  font-size: 6rem;
+
+  font-family: "Monoton", cursive;
+}
+.contactSection_one p {
+  font-size: 1.3rem;
+}
+.contactSection_two {
+  display: grid;
+  grid-template-rows: 9rem 9rem 9rem;
+  text-align: center;
+}
+.contactSection_two h3 {
+  color: white;
+  font-size: 2rem;
+}
+.contactSection_two p {
+  font-size: 1.3rem;
+}
+.mainForm {
+  display: grid;
+  max-width: 90%;
+  grid-template-rows: 9rem 45rem;
+}
+.mainForm h1 {
+  font-size: 6rem;
+  font-family: "Monoton", cursive;
+  margin-bottom: 1rem;
+}
+.cform {
+  padding: 4rem 4rem;
+
+  text-align: left;
+  box-shadow: 0.2rem 1rem 3rem 0rem rgb(0, 0, 0);
+}
+.cform label {
+  margin-top: 2rem;
+  margin-bottom: 0.4rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+.cform input {
+  margin-top: 0.7rem;
+  margin-bottom: 1.7rem;
+  outline: none;
+  border: none;
+  width: 100%;
+  background: transparent;
+  border-bottom: 0.2rem solid rgb(149, 149, 149);
+  color: rgb(149, 149, 149);
+  font-size: 1.8rem;
+}
+.cform button {
+  margin-left: 31%;
+  margin-top: 5%;
+  padding: 1.5rem 3rem;
+  font-size: 1.5rem;
+  outline: none;
+  border: none;
+  box-shadow: 0.2rem 1rem 3rem 0rem rgb(0, 0, 0);
+  background-color: transparent;
+  letter-spacing: 0.3rem;
+}
+.cform button:hover {
+  background-color: rgb(33, 33, 33);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* RESPONSIVE CODE __*/
+/* From 280px to 576px*/
+@media (min-width: 280px) and (max-width: 576px) {
+  .ContactSection {
+    flex-wrap: wrap;
+    /* max-width: 100%; */
+  }
+  .contactSection_one h1 {
+    font-size: 3rem;
+  }
+  .contactInfo {
+    display: grid;
+    max-width: 100%;
+    grid-template-rows: 20rem 22rem;
+  }
+  .contactSection_one p {
+    font-size: 1.1rem;
+  }
+  .contactSection_two {
+    display: grid;
+    grid-template-rows: 6rem 6rem 6rem;
+    text-align: center;
+  }
+  .contactSection_two h3 {
+    color: white;
+    font-size: 1.5rem;
+  }
+  .mainForm {
+    display: grid;
+    max-width: 100%;
+    margin: auto;
+    grid-template-rows: 9rem 37rem;
+    margin-bottom: 5%;
+  }
+  .mainForm h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .cform {
+    padding: 2rem 2rem;
+    text-align: center;
+  }
+  .cform label {
+    font-size: 1.2rem;
+  }
+  .cform button {
+    margin: auto;
+    text-align: center;
+    padding: 1.1rem 1rem;
+    font-size: 1rem;
+  }
+}
+
+/* From 576px to 768px  */
+/* Only font size changed here and kept the previous breakpoint styles so that they don't get lost in this breakpoint */
+@media (min-width: 576px) and (max-width: 768px) {
+  .ContactSection {
+    flex-wrap: wrap;
+    /* max-width: 100%; */
+  }
+  .contactSection_one h1 {
+    font-size: 4rem;
+  }
+  .contactInfo {
+    display: grid;
+    max-width: 100%;
+    grid-template-rows: 20rem 22rem;
+  }
+  .contactSection_one p {
+    font-size: 1.4rem;
+  }
+  .contactSection_two {
+    display: grid;
+    grid-template-rows: 6rem 6rem 6rem;
+    text-align: center;
+  }
+  .contactSection_two h3 {
+    color: white;
+    font-size: 1.7rem;
+  }
+  .mainForm {
+    display: grid;
+    max-width: 100%;
+    margin: auto;
+    grid-template-rows: 9rem 37rem;
+    margin-bottom: 5%;
+  }
+  .mainForm h1 {
+    font-size: 4rem;
+    text-align: center;
+  }
+  .cform {
+    padding: 2rem 2rem;
+    text-align: center;
+  }
+  .cform label {
+    font-size: 1.5rem;
+  }
+  .cform button {
+    margin: auto;
+    text-align: center;
+    padding: 1.1rem 1rem;
+    font-size: 1rem;
+  }
+}
+
+/* From 768px to 992px */
+/* Only font size changed here and kept the previous breakpoint styles so that they don't get lost in this breakpoint */
+@media (min-width: 768px) and (max-width: 992px) {
+  .ContactSection {
+    flex-wrap: wrap;
+    /* max-width: 100%; */
+  }
+  .contactSection_one h1 {
+    font-size: 4rem;
+  }
+  .contactInfo {
+    display: grid;
+    max-width: 100%;
+    grid-template-rows: 20rem 22rem;
+  }
+  .contactSection_one p {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
+  .contactSection_two {
+    display: grid;
+    grid-template-rows: 6rem 6rem 6rem;
+    text-align: center;
+  }
+  .contactSection_two h3 {
+    color: white;
+    font-size: 1.7rem;
+  }
+  .mainForm {
+    display: grid;
+    max-width: 100%;
+    margin: auto;
+    grid-template-rows: 9rem 37rem;
+    margin-bottom: 5%;
+  }
+  .mainForm h1 {
+    font-size: 4rem;
+    text-align: center;
+  }
+  .cform {
+    padding: 2rem 2rem;
+    text-align: center;
+  }
+  .cform label {
+    font-size: 1.5rem;
+  }
+  .cform button {
+    margin: auto;
+    text-align: center;
+    padding: 1.1rem 1rem;
+    font-size: 1rem;
+  }
+}
+/* From 992px to 1200px */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .mainForm h1 {
+    font-size: 4rem;
+    text-align: center;
+  }
+  .mainForm {
+    max-width: 100%;
+  }
+  .contactSection_one h1 {
+    font-size: 4rem;
+  }
+  .cform button {
+    margin: auto;
+    text-align: center;
+    padding: 1.5rem 1.8rem;
+    font-size: 1.3rem;
+  }
+}
+/* From 1200px to 1400px */
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .ContactSection {
+    flex-wrap: wrap;
+    /* max-width: 100%; */
+    margin: 0% 5%;
+  }
+  .contactInfo {
+    max-width: 50%;
+    column-gap: 10rem;
+    padding: 5rem;
+  }
+}

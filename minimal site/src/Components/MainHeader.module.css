@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
+* {
+  font-family: "PT Sans", sans-serif;
+}
+.header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0rem 7%;
+  padding: 3rem 0rem;
+  z-index: 999;
+  background-color: transparent;
+}
+
+.logo {
+  height: 7rem;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+.clicks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 17%;
+  font-size: 1.5rem;
+  letter-spacing: 0.05rem;
+  color: rgb(181, 181, 181);
+}
+
+.socials {
+  position: fixed;
+  z-index: 100;
+  top: 75%;
+  left: 7%;
+  display: grid;
+  grid-template-rows: 2rem 2rem 2rem 2rem;
+  font-size: 1.5rem;
+  row-gap: 1rem;
+  color: rgb(181, 181, 181);
+}
+.icons:hover {
+  cursor: pointer;
+  color: white;
+}
+.scroll_bar {
+  position: fixed;
+  top: 80%;
+  right: 0%;
+  /* max-width: 3rem; */
+  transform: rotate(90deg);
+  color: rgb(181, 181, 181);
+
+  display: grid;
+  grid-template-columns: 3rem 10rem 3rem;
+  /* grid-template-rows: 2rem 4rem 2rem; */
+  align-items: center;
+}
+.scroll_bar p {
+  letter-spacing: 0.5rem;
+}
+.arrows {
+  font-size: 2rem;
+}
+/* <a> tags are here to style <Navlink> as it is behind the scene an <a> tag */
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(244, 242, 242);
+
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+/* RESPONSIVE CODE __*/
+/* From 280px to 576px */
+@media (min-width: 280px) and (max-width: 576px) {
+  .logo {
+    height: 4rem;
+  }
+  .clicks {
+    justify-content: end;
+    font-size: 1.3rem;
+    width: 70%;
+    margin-left: auto;
+  }
+  .header {
+    justify-content: start;
+  }
+  .clicks p {
+    margin-left: 1rem;
+  }
+  .socials {
+    grid-template-rows: 2rem 2rem 2rem 2rem;
+    font-size: 1.2rem;
+  }
+  .scroll_bar {
+    position: fixed;
+    top: 73%;
+    right: 7%;
+    max-width: 2rem;
+    grid-template-columns: 3rem 10rem 3rem;
+  }
+  .scroll_bar p {
+    letter-spacing: 0.5rem;
+    font-size: 0.9rem;
+  }
+  .arrows {
+    font-size: 1.4rem;
+  }
+}
+
+/* From 576px to 768px  */
+@media (min-width: 576px) and (max-width: 768px) {
+  .header {
+    justify-content: start;
+  }
+  .clicks {
+    width: 32%;
+    margin-left: auto;
+  }
+  .socials {
+    font-size: 1.3rem;
+  }
+
+  .scroll_bar {
+    position: fixed;
+    top: 84%;
+    right: -3%;
+    grid-template-columns: 3rem 10rem 3rem;
+  }
+  .scroll_bar p {
+    letter-spacing: 0.5rem;
+    font-size: 0.9rem;
+  }
+  .arrows {
+    font-size: 1.4rem;
+  }
+  .logo {
+    height: 6rem;
+  }
+}
+
+/* From 768px to 992px */
+@media (min-width: 768px) and (max-width: 992px) {
+  .header {
+    justify-content: space-between;
+  }
+  .clicks {
+    width: 32%;
+  }
+  .socials {
+    font-size: 1.4rem;
+  }
+
+  .scroll_bar {
+    position: fixed;
+    top: 82%;
+    right: -3%;
+    grid-template-columns: 3rem 10rem 3rem;
+  }
+  .scroll_bar p {
+    letter-spacing: 0.5rem;
+    font-size: 1rem;
+  }
+  .arrows {
+    font-size: 1.5rem;
+  }
+  .logo {
+    height: 6rem;
+  }
+}
+/* From 992px to 1200px - No need as current style suits  */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .header {
+    justify-content: space-between;
+  }
+  .clicks {
+    width: 20%;
+  }
+}
